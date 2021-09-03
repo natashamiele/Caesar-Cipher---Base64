@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="passinhodoromano.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>🗝 Code - Decode</title>
+</head>
+
+<body>
+
+    <form class="container">
+        <h1 class="titulo">Codifique e descodifique uma mensagem oculta</h1>
+        <section class="escolha">
+            <select name="selecione" id="selecione">
+                <option value="metodo" disabled selected>Escolha</option>
+                <option value="caesar">Cifra de Caesar</option>
+                <option value="base64">base64</option>
+            </select>
+
+
+            <input class="ocultarIncremento" id="ocultarIncremento" type="number"
+                placeholder="Digite a chave em número">
+
+
+            <div class="metodo">
+                <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                <label for="escolhaDeMetodo">Codificar 🔒</label>
+            </div>
+            <div class="metodo">
+                <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                <label for="escolhaDeMetodo">Decodificar 🔑</label>
+            </div>
+        </section>
+
+        <section class="mensagem-usuario">
+            <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite aqui" rows="10"
+                cols="33"></textarea>
+            <textarea class="texto" id="resultado" name="texto-usuario" rows="10" cols="33" readonly></textarea>
+        </section>
+
+        <button type="button" id="botao">Codificar</button>
+
+    </form>
+
+    <footer>
+
+        <div>
+            <a href="https://www.linkedin.com/in/natashamiele/"><img class="icon" src="linkedin-icon2.png" width="35" height="35"></a>
+            <a href="https://github.com/Natasha-Miele"><img class="icon" src="github-icon.png" width="35" height="35"></a>
+        </div>
+
+        <div>
+            <p class="rodape"><a href="https://www.linkedin.com/in/natashamiele/"><strong>Natasha Miele</strong></a> ©Copyright 2021</p>
+        </div>
+
+    </footer>
+    <script src="passinhodoromano.js"></script>
+</body>
+
+</html>

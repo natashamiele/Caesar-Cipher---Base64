@@ -1,0 +1,180 @@
+body{   
+    background-image: url(wallpaper-conection.jpg);
+    font-family: 'Goldman', cursive;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 200px;
+    border-radius: 32px;
+    background-color: rgba(219, 227, 247, 0.68);  /* possivelmente tirar esse bg aqui*/
+    padding: 30px 10px 0 10px;
+}
+
+.titulo{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 2em;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -4px 7px 20px 1px rgb(78, 14, 69, 1);
+    background-color: rgba(219, 227, 247, 0.68);
+}
+
+.escolha{
+    display: flex;
+    margin: 3%;
+   /*padding: 2% 2% 0;*/
+   background: rgba(219, 227, 247, 0.68);
+    width: 90%;
+    border-radius: 5px;
+    justify-content: center;
+    font-family: 'Goldman', cursive;
+    font-size: 16px;
+}
+
+#selecione{
+    margin: 10px;
+    width: 15%;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+#ocultarIncremento{
+    margin: 10px;
+    display: none;
+}
+
+.metodo{
+    margin: 10px 50px;
+}
+
+.mensagem-usuario{
+    display: flex;
+    width: 100%;
+}
+
+.texto{
+    resize: none;
+    font-size: 15px;
+    margin: 25px 25px;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    box-shadow: -4px 7px 20px 1px rgb(78, 14, 69, 1);
+}
+
+#botao{
+    font-family: 'Goldman', cursive;
+    width: 25%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 40px 15px;
+    text-transform: uppercase;
+    /*background-color: rgb(54, 134, 255, 1);*/
+    /*color: rgb(252, 205, 245);*/
+    background: rgba(219, 227, 247, 0.68);
+    box-shadow: -4px 7px 20px 1px rgb(78, 14, 69, 1);
+    font-weight: 300;
+}
+
+#botao:hover{
+    border-color: rgb(252, 205, 245);
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(252, 205, 245);
+    background: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    margin: 10px 0 0;
+    background: #fff;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    font-weight: bold;  
+}
+
+a {
+text-decoration: none;
+background: #ffffff;
+color: rgb(201, 80, 155);
+}
+
+.icon{
+    margin: 5px;
+    text-decoration: none;
+}
+
+@media(max-width:700px){
+
+    body {
+        margin: 80px 0 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 15px;
+        font-size: 13px;    
+    }
+
+     .titulo {
+        font-size: 16px;
+        text-align: center;
+     }
+    
+     .escolha {
+         flex-direction: column;
+         margin: 5%;
+     }
+
+     #selecione {
+         margin: 15px 5px 5px;
+         width: 95%;
+     }
+
+     .metodo {
+        margin: 4px 5px 10px;
+        font-size: 14px;
+        text-align: center;
+     }
+    
+    #botao {
+        width: auto;
+        font-size: 14px;
+    }
+
+    footer{
+        position: fixed;
+        display: block;
+        justify-content: center;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+    }  
+}
+
+@media(min-width:700px){
+    body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
